@@ -33,7 +33,8 @@ postgresql_databases:
 postgresql_users:
   - name: baz
     pass: pass
-    encrypted: no       # denotes if the password is already encrypted.
+    encrypted: no       # It true, the password will be encrypted before storage
+                        # When using a hashed password in the settings, leave this to "no"
 
 # List of user privileges to be applied (optional)
 postgresql_user_privileges:
