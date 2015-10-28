@@ -18,6 +18,7 @@ postgresql_cluster_reset: false
 postgresql_database_owner: "{{ postgresql_admin_user }}"
 # Extensions
 postgresql_ext_install_contrib: no
+postgresql_ext_install_repmgr: no
 postgresql_ext_install_dev_headers: no
 postgresql_ext_install_postgis: no
 

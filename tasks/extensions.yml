@@ -6,3 +6,5 @@
   when: postgresql_ext_install_dev_headers
 - include: extensions/postgis.yml
   when: postgresql_ext_install_postgis
+- include: extensions/repmgr.yml
+  when: postgresql_ext_install_repmgr
